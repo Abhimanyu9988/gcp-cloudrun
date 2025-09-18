@@ -1,0 +1,158 @@
+# =============================================================================
+# Sensitive Configuration Files
+# =============================================================================
+
+# Environment configuration with real credentials
+0-set-env.sh
+
+# Any files containing access keys or secrets
+*.key
+*.secret
+*-credentials.json
+service-account-key.json
+
+# AppDynamics license files
+license.lic
+
+# =============================================================================
+# Generated Files
+# =============================================================================
+
+# Generated during script execution
+deployment-info.txt
+generate-load.sh
+
+# Docker build context
+app/appdynamics.cfg
+app/Dockerfile
+# Log files
+*.log
+logs/
+/tmp/
+app/
+# =============================================================================
+# Development Environment
+# =============================================================================
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Python virtual environments
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+
+# =============================================================================
+# Docker and Container Files
+# =============================================================================
+
+# Docker temporary files
+.dockerignore.bak
+docker-compose.override.yml
+
+# Container runtime files
+*.pid
+*.sock
+
+# =============================================================================
+# Cloud and Infrastructure
+# =============================================================================
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Kubernetes secrets
+kustomization.yaml
+secrets.yaml
+
+# GCP service account keys
+*-sa-key.json
+gcp-key.json
+
+# =============================================================================
+# Testing and Documentation
+# =============================================================================
+
+# Test results
+test-results/
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Generated documentation
+docs/_build/
+site/
+
+# =============================================================================
+# Node.js (if using any JS tooling)
+# =============================================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# =============================================================================
+# Backup and Temporary Files
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.orig
+*.tmp
+
+# Archive files (unless intentional)
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+
+# =============================================================================
+# OS Generated Files
+# =============================================================================
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# =============================================================================
+# Custom Ignore Patterns
+# =============================================================================
+
+# Add your custom patterns here
+# Example: ignore all files starting with 'local-'
+# local-*
+
+# Example: ignore environment-specific configs
+# config.prod.yaml
+# config.staging.yaml
